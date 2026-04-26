@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: V√©rifier les fichiers
         run: |
-          echo "Ì¥ç V√©rification des fichiers..."
+          echo "V√©rification des fichiers..."
           ls -la app/
-          test -f app/index.html && echo "‚úÖ index.html existe"
+          test -f app/index.html && echo "index.html existe"
           
   build-docker:
     runs-on: ubuntu-latest
